@@ -17,6 +17,7 @@ fi
 
 if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
     cpack -G "DEB;TGZ"
+    dpkg -i g3log-*-Linux.deb
     tar zxvf g3log-*-Linux.tar.gz
 fi
 
